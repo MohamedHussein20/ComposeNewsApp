@@ -9,6 +9,10 @@ object Versions {
     const val composeUi = "1.5.4"
     const val material3 = "1.1.2"
 
+    // Dagger Hilt
+    const val hilt = "2.50"
+    const val hiltNavigationCompose = "1.1.0"
+
     // Testing dependencies
     const val junit = "4.13.2"
     const val extJunit = "1.1.5"

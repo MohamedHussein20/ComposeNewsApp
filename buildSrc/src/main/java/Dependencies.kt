@@ -20,6 +20,10 @@ object Dependencies {
     val uiTestJunit4 by lazy { "androidx.compose.ui:ui-test-junit4:${Versions.uiTestJunit4}" }
     val uiTooling by lazy { "androidx.compose.ui:ui-tooling:${Versions.uiTooling}" }
     val uiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest:${Versions.uiTestManifest}" }
+    val hilt by lazy { "com.google.dagger:hilt-android:${Versions.hilt}" }
+    val hiltCompiler by lazy { "com.google.dagger:hilt-compiler:${Versions.hilt}" }
+    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}" }
+
 }
 
 object Modules {

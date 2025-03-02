@@ -37,4 +37,6 @@ dependencies {
     implementation(Dependencies.coreKtx)
     implementation(Dependencies.appCompat)
     implementation(Dependencies.material3)
+    testImplementation(libs.testng)
+    testImplementation(libs.junit.junit)
 }
