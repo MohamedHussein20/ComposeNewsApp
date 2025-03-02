@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
 import com.memo.newsapp.ui.theme.NewsAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,8 +14,13 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NewsAppTheme {
-                Text(text = "Hello")
+                NewsInShortEntryPoint()
             }
         }
     }
+}
+
+@Composable
+fun NewsInShortEntryPoint(){
+    Text(text = "News In Short")
 }

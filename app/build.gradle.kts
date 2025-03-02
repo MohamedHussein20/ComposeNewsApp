@@ -53,6 +53,7 @@ dependencies {
     implementation(Dependencies.coreKtx)
     implementation(Dependencies.lifecycleRuntime)
     implementation(Dependencies.activityCompose)
+    implementation(Dependencies.appCompat)
     implementation(platform(Dependencies.composeBom))
     implementation(Dependencies.composeUi)
     implementation(Dependencies.composeUiGraphics)
@@ -69,4 +70,5 @@ dependencies {
     // Debug dependencies
     debugImplementation(Dependencies.uiTooling)
     debugImplementation(Dependencies.uiTestManifest)
+    implementation(project(Modules.utilitis))
 }

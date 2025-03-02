@@ -4,6 +4,7 @@ object Dependencies {
     val coreKtx by lazy { "androidx.core:core-ktx:${Versions.coreKtx}" }
     val lifecycleRuntime by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}" }
     val activityCompose by lazy { "androidx.activity:activity-compose:${Versions.activityCompose}" }
+    val appCompat by lazy { "androidx.appcompat:appcompat:${Versions.appCompat}" }
 
     // Jetpack Compose dependencies
     val composeBom by lazy { "androidx.compose:compose-bom:${Versions.composeBom}" }
@@ -19,4 +20,8 @@ object Dependencies {
     val uiTestJunit4 by lazy { "androidx.compose.ui:ui-test-junit4:${Versions.uiTestJunit4}" }
     val uiTooling by lazy { "androidx.compose.ui:ui-tooling:${Versions.uiTooling}" }
     val uiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest:${Versions.uiTestManifest}" }
+}
+
+object Modules {
+    const val utilitis = ":utilitis"
 }
