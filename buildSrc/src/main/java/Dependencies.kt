@@ -13,17 +13,26 @@ object Dependencies {
     val composeUiToolingPreview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.composeUi}" }
     val material3 by lazy { "androidx.compose.material3:material3:${Versions.material3}" }
 
+    // Dagger Hilt
+    val hilt by lazy { "com.google.dagger:hilt-android:${Versions.hilt}" }
+    val hiltCompiler by lazy { "com.google.dagger:hilt-compiler:${Versions.hilt}" }
+    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}" }
+    val hiltTesting by lazy { "com.google.dagger:hilt-android-testing:${Versions.hiltTesting}" }
+
+    // Retrofit & OkHttp
+    val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.retrofit}" }
+    val gsonConverter by lazy { "com.squareup.retrofit2:converter-gson:${Versions.retrofit}" }
+    val okHttp by lazy { "com.squareup.okhttp3:okhttp:${Versions.okHttp}" }
+    val loggingInterceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}" }
+    val moshiConverter by lazy { "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}" }
+
     // Testing dependencies
     val junit by lazy { "junit:junit:${Versions.junit}" }
-    val extJunit by lazy { "androidx.test.ext:junit:${Versions.extJunit}" }
+    val extJunit by lazy { "androidx.test.ext:junit:${Versions.junitExt}" }
     val espressoCore by lazy { "androidx.test.espresso:espresso-core:${Versions.espressoCore}" }
     val uiTestJunit4 by lazy { "androidx.compose.ui:ui-test-junit4:${Versions.uiTestJunit4}" }
     val uiTooling by lazy { "androidx.compose.ui:ui-tooling:${Versions.uiTooling}" }
     val uiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest:${Versions.uiTestManifest}" }
-    val hilt by lazy { "com.google.dagger:hilt-android:${Versions.hilt}" }
-    val hiltCompiler by lazy { "com.google.dagger:hilt-compiler:${Versions.hilt}" }
-    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}" }
-
 }
 
 object Modules {

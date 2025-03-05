@@ -76,6 +76,14 @@ dependencies {
     implementation(project(Modules.utilitis))
     implementation(Dependencies.hilt)
     implementation(Dependencies.hiltNavigationCompose)
+
+    // Retrofit & OkHttp
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.gsonConverter)
+    implementation(Dependencies.okHttp)
+    implementation(Dependencies.loggingInterceptor)
+    implementation(Dependencies.moshiConverter)
+
 }
 kapt{
     correctErrorTypes = true
