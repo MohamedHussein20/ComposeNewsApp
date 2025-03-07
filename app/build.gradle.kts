@@ -87,6 +87,8 @@ dependencies {
     implementation(Dependencies.moshiKotlin)
     kapt(Dependencies.moshiCodeGen)
 
+    implementation(Dependencies.coroutinesCore)
+    implementation(Dependencies.coroutinesAndroid)
 }
 kapt{
     correctErrorTypes = true
