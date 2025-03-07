@@ -83,6 +83,9 @@ dependencies {
     implementation(Dependencies.okHttp)
     implementation(Dependencies.loggingInterceptor)
     implementation(Dependencies.moshiConverter)
+    implementation(Dependencies.moshi)
+    implementation(Dependencies.moshiKotlin)
+    kapt(Dependencies.moshiCodeGen)
 
 }
 kapt{

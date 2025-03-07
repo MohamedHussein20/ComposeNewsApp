@@ -20,6 +20,9 @@ object Dependencies {
     val hiltTesting by lazy { "com.google.dagger:hilt-android-testing:${Versions.hiltTesting}" }
 
     // Retrofit & OkHttp
+    val moshi by lazy { "com.squareup.moshi:moshi:${Versions.moshi}" }
+    val moshiKotlin by lazy { "com.squareup.moshi:moshi-kotlin:${Versions.moshi}" }
+    val moshiCodeGen by lazy { "com.squareup.moshi:moshi-kotlin-codegen:${Versions.moshi}" }
     val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.retrofit}" }
     val gsonConverter by lazy { "com.squareup.retrofit2:converter-gson:${Versions.retrofit}" }
     val okHttp by lazy { "com.squareup.okhttp3:okhttp:${Versions.okHttp}" }
