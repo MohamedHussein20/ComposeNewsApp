@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.memo.newsapp.ui.repository.NewsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -13,9 +14,12 @@ import javax.inject.Inject
 class NewsViewModel @Inject constructor(
     private val newsRepository: NewsRepository
 ) : ViewModel() {
-    fun getNews() {
+    fun getNews(country: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            val response = newsRepository.getTopHeadlines("us")
+            newsRepository.getTopHeadlines(country)
+                .collectLatest {
+
+                }
         }
     }
     companion object{
