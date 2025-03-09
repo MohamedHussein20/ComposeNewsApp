@@ -52,6 +52,7 @@ android {
 }
 
 dependencies {
+    implementation (libs.material3)
     implementation(Dependencies.coreKtx)
     implementation(Dependencies.lifecycleRuntime)
     implementation(Dependencies.activityCompose)
