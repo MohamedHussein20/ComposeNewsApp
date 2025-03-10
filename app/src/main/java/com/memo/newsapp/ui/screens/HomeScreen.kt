@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.memo.newsapp.ui.components.Loader
+import com.memo.newsapp.ui.components.NewsList
 import com.memo.newsapp.ui.viewmodel.NewsViewModel
 import com.memo.utilitis.ResourceState
 
@@ -36,6 +37,7 @@ fun HomeScreen(
                 // Show news list
                 val response = (newsResponse.value as ResourceState.Success).data
                 Log.d(TAG, "HomeScreen: Success ${response.status} ${response.totalResults}")
+                NewsList(response)
             }
 
             is ResourceState.Error -> {

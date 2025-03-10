@@ -29,4 +29,5 @@ object Versions {
     const val hiltTesting = "2.50"
 
     const val coroutines = "1.7.3"
+    const val splashScreen = "1.0.1"
 }
