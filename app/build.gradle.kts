@@ -91,6 +91,8 @@ dependencies {
     implementation(Dependencies.coroutinesCore)
     implementation(Dependencies.coroutinesAndroid)
     implementation(Dependencies.splashScreen)
+    implementation(Dependencies.coil)
+    implementation(Dependencies.coilCompose)
 }
 kapt{
     correctErrorTypes = true

@@ -42,7 +42,7 @@ fun HomeScreen(
         state = pagerState,
         modifier = Modifier.fillMaxSize(),
         pageSize = PageSize.Fill,
-        pageSpacing = 8.dp
+        pageSpacing = 80.dp
     ) { page: Int ->
         Surface(
             modifier = Modifier
