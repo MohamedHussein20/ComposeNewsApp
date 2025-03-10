@@ -41,6 +41,8 @@ fun HomeScreen(
             is ResourceState.Error -> {
                 // Show error message
                 Log.d(TAG, "HomeScreen: Error")
+                val error = (newsResponse.value as ResourceState.Error).message
+                Log.d(TAG, "HomeScreen: Error $error")
             }
         }
     }
